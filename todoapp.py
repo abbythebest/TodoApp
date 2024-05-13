@@ -6,7 +6,7 @@ todos = [{"todo": 'written assignment 1','done': True}]
 
 @app.route("/")
 def index():
-    return render_template("index1.html",todos=todos)
+    return render_template("index.html",todos=todos)
 
 @app.route("/add",methods=["POST"])
 def add():
